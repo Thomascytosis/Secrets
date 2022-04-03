@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 //mongodb code
-mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://"+process.env.MG_USER+": "+process.env.MG_PASS+"@todocluster.xqqgv.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 // add new mongoose.schema to use mongoose encrypt
 const userSchema = new mongoose.Schema({
     email: String,
@@ -186,6 +186,13 @@ app.post("/login", function(req,res){
 
 
 //server code
-app.listen(3000, function(){
-    console.log("Now serving port 3000");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+// app.listen(port);
+
+//local server
+app.listen(port, function() {
+  console.log("Server started on port 3000");
 });
