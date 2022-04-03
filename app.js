@@ -57,7 +57,7 @@ passport.deserializeUser(function(id,done){
 }); //end cookie
 //google passport
 passport.use(new GoogleStrategy({
-    clientID: "sqprgub8htmkdlp0qjss1v8l941htmsj.apps.googleusercontent.com",
+    clientID: "402162021852-sqprgub8htmkdlp0qjss1v8l941htmsj.apps.googleusercontent.com",
     clientSecret: "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",
     callbackURL: "https://obscure-hamlet-02554.herokuapp.com/auth/google/secrets",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
