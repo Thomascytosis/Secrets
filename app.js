@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 //mongodb code
-mongoose.connect("mongodb+srv://"+process.env.MG_USER+": "+process.env.MG_PASS+"@todocluster.xqqgv.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://Thomascytosis:0mega2missioncontrol!@todocluster.xqqgv.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 // add new mongoose.schema to use mongoose encrypt
 const userSchema = new mongoose.Schema({
     email: String,
@@ -59,7 +59,7 @@ passport.deserializeUser(function(id,done){
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/secrets",
+    callbackURL: "https://obscure-hamlet-02554.herokuapp.com/auth/google/secrets",
     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
     },
     function(accessToken, refreshToken, profile, cb) {
