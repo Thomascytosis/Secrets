@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 //mongodb code
-mongoose.connect("mongodb+srv://Thomascytosis:0mega2missioncontrol!@todocluster.xqqgv.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://Thomascytosis:0mega2missioncontrol!@todocluster.xqqgv.mongodb.net/userDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 // add new mongoose.schema to use mongoose encrypt
 const userSchema = new mongoose.Schema({
     email: String,
