@@ -1,17 +1,17 @@
 <%- include('partials/header') %>
 
-<div class="container">
-  <div class="jumbotron centered">
-    <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Spy Bulletin</h1>
-    <p class="secret-text">Mustache and Sunglass, What is your message?</p>
+<div class="container bg-dark">
+  <div class="jumbotron centered bg-dark">
+    <i class="fa fa-user-secret fa-6x"></i>
+    <h1 class="display-3 text-light">Spy Bulletin</h1>
+    <p class="secret-text bg-dark text-light">Mustache and Sunglasses, What is your message?</p>
 
     <form action="/submit" method="POST">
 
-      <div class="form-group">
-        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?">
+      <div class="form-group bg-dark text-light">
+        <input type="text" class="form-control text-center bg-dark text-light" name="secret" placeholder="What's your secret?">
       </div>
-      <button type="submit" class="btn btn-dark">Submit</button>
+      <button type="submit" class="btn btn-secondary">Submit</button>
     </form>
 
 

@@ -1,23 +1,23 @@
 <%- include('partials/header') %>
-<div class="container mt-5">
+<div class="container mt-5 text-light">
   <h1>Register</h1>
 
   <div class="row">
     <div class="col-sm-8">
-      <div class="card">
-        <div class="card-body">
+      <div class="card bg-dark">
+        <div class="card-body bg-dark">
 
           <!-- Makes POST request to /register route -->
           <form action="/register" method="POST">
-            <div class="form-group">
+            <div class="form-group text-light bg-dark">
               <label for="email">Email</label>
-              <input type="email" class="form-control" name="username">
+              <input type="email" class="form-control bg-dark text-light" name="username">
             </div>
-            <div class="form-group">
+            <div class="form-group text-light bg-dark">
               <label for="password">Password</label>
-              <input type="password" class="form-control" name="password">
+              <input type="password" class="form-control bg-dark text-light" name="password">
             </div>
-            <button type="submit" class="btn btn-dark">Register</button>
+            <button type="submit" class="btn btn-secondary">Register</button>
           </form>
 
         </div>
@@ -25,8 +25,8 @@
     </div>
 
     <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
+      <div class="card bg-dark">
+        <div class="card-body bg-dark">
           <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
             <i class="fab fa-google"></i>
             Sign Up with Google
@@ -39,4 +39,4 @@
   </div>
 </div>
 
-<%- include('partials/header') %>
+<%- include('partials/footer') %>
