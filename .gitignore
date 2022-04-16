@@ -1,8 +1,8 @@
 #DS_store
-.DS_Store
+*.DS_Store
 # old app files
 old2appjs
-oldappjs
+old1appjs
 
 # Logs
 logs
